@@ -25,12 +25,12 @@
         <div class="container">
             <div class="nav">
                     
-                    <a href="#" class="logo-text">
+                    <a href="{{ route('homepage') }}" class="logo-text">
                         Film <span class="main-color">Sitesi</span> 
                     </a>
 
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="{{ route('homepage') }}">Anasayfa</a></li>
                     <li><a href="#">Genre</a></li>
                     <li><a href="#">Movies</a></li>
                     <li><a href="#">Series</a></li>

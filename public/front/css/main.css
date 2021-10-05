@@ -203,8 +203,24 @@ a.movie-item:hover {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: calc(var(--space-top) / 2);
+    margin-top: 30px;
 }
+
+.video-btn {
+    color: #ffffff;
+    padding: 0.25rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    background-color: #9b1919;
+}
+.video-btn:hover {
+    background-color: #831616;
+}
+
 
 .movie-info {
     display: flex;
@@ -219,12 +235,6 @@ a.movie-item:hover {
 
 .movie-info i {
     color: var(--main-color);
-}
-
-.poster{
-    height: 100%;
-    object-fit: cover;
-    object-position: 15% 10%;
 }
 
 .movie-info ~ .movie-info {
@@ -356,7 +366,8 @@ a.movie-item:hover {
 }
 
 .section {
-    padding-top: 80px;
+    padding-top: 35px;
+    margin-top: 20px;
 }
 
 .section-header {
@@ -439,6 +450,66 @@ footer ul{
     background-color: var(--box-bg);
     text-align: center;
 }
+
+/* Detail */
+
+.detail-border{
+    border-bottom: rgb(187, 187, 187) 1px solid;
+    border-top: rgb(187, 187, 187) 1px solid;
+    padding: 30px;
+}
+
+.detail-info {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+}
+.detail-cast-name{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(136, 136, 136);
+    margin-bottom: 25px;
+}
+.detail-images{
+    height:250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.detail-actor-hover figure {
+	background: #292929;
+}
+.detail-actor-hover figure img {
+	opacity: 1;
+	-webkit-transition: .05s ease-in-out;
+	transition: .05s ease-in-out;
+}
+.detail-actor-hover figure:hover img {
+	opacity: .5;
+}
+
+.detail-image-hover figure {
+	background: #292929;
+    height:250px;
+}
+.detail-image-hover figure img {
+	opacity: 1;
+	-webkit-transition: .05s ease-in-out;
+	transition: .05s ease-in-out;
+    height:250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+.detail-image-hover figure:hover img {
+	opacity: .5;
+}
+
 
 /* RESPONSIVE */
 

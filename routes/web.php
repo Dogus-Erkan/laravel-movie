@@ -15,4 +15,5 @@ use App\Http\Controllers\Front\MoviesController;
 */
 
 Route::get('/',[MoviesController::class,'index'])->name('homepage');
-Route::get('/movies/{movie}',[MoviesController::class,'show'])->name('movies.show');
+Route::get('/filmler/{movie}',[MoviesController::class,'show'])->name('movies.show');
+Route::get('/diziler/{movie}',[MoviesController::class,'show'])->name('tv.show');

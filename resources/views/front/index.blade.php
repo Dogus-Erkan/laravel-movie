@@ -44,6 +44,7 @@
     <div class="owl-carousel" id="top-movies-slide">
      @foreach ($nowPlaying as $popularMovie )
      <div class="movie-item">
+         <a href="{{ route('movies.show',$popularMovie['id']) }}">
         <img src="{{'https://image.tmdb.org/t/p/w500/'.$popularMovie['poster_path'] }}" alt="poster">
         <div class="movie-item-content">
             <div class="movie-item-title">
@@ -64,7 +65,7 @@
                         {{ $genres->get($genre) }} @if (!$loop->last) , @endif
                     @endforeach</span>
                 </div>
-           
+            </a>
         </div>
     </div>
      @endforeach

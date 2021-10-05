@@ -1,4 +1,4 @@
-<a href="#" class="movie-item">
+<a href="{{ route('movies.show',$movie['id']) }}" class="movie-item">
     <img src="{{'https://image.tmdb.org/t/p/w500/'.$movie['poster_path'] }}" alt="poster">
     <div class="movie-item-content">
         <div class="movie-item-title">
